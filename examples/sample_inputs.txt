@@ -1,0 +1,14 @@
+Sample Input for Summarization:
+
+Artificial Intelligence (AI) is revolutionizing multiple industries by automating repetitive tasks and 
+enhancing decision-making processes. In healthcare, AI assists in diagnostics and personalized treatment plans, 
+while in finance, it improves risk assessment and fraud detection. Educational institutions use AI for adaptive 
+learning and automated grading systems. However, challenges related to data privacy and ethical considerations 
+continue to be a major concern.
+
+
+Sample Input for Topic Extraction:
+Climate change is causing global temperatures to rise, leading to increased natural disasters such as hurricanes, droughts, and floods. Efforts to combat climate change include reducing carbon emissions and adopting sustainable practices.
+
+Sample Input for Question Generation:
+Photosynthesis is a process by which green plants convert sunlight into chemical energy, producing oxygen as a byproduct. It occurs in the chloroplasts of plant cells and is essential for sustaining life on Earth.

@@ -1,0 +1,24 @@
+import os
+from transformers import pipeline
+
+#create model directory
+os.makedirs("models/flan-t5-base", exist_ok=True)
+
+print("[INFO] Downloading the FLAN-T5 base model...")
+
+try:
+    #load nd save model locally
+    summarizer = pipeline("summarization", model="google/flan-t5-base")
+    summarizer.save_pretrained("models/flan-t5-base")
+    print("[SUCCESS] Model downloaded and saved successfully!")
+except Exception as e:
+    print(f"[ERROR] Model download failed: {e}")
+
+#sample
+print("[INFO] Loading the model for testing...")
+try:
+    loaded_summarizer = pipeline("summarization", model="models/flan-t5-base")
+    output = loaded_summarizer("Artificial Intelligence is transforming industries like healthcare and finance.")
+    print("Generated Summary:", output[0]['summary_text'])
+except Exception as e:
+    print(f"[ERROR] Model loading failed: {e}")
